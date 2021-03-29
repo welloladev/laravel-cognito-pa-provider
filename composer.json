@@ -1,6 +1,6 @@
 {
-  "name": "customergauge/cognito",
-  "description": "AWS Cognito provider for Laravel Authentication",
+  "name": "4CME/cognito",
+  "description": "AWS Cognito provider for Laravel 6 LTS Authentication",
   "type": "library",
   "license": "MIT",
   "keywords": ["laravel", "cognito", "aws", "authentication"],
@@ -18,12 +18,12 @@
     "web-token/jwt-core": "^2.0",
     "web-token/jwt-signature": "^2.0",
     "web-token/jwt-signature-algorithm-rsa": "^2.0",
-    "illuminate/contracts": "^7.1 || ^8.0"
+    "illuminate/contracts": "^6.0 || ^7.1 || ^8.0"
   },
   "require-dev": {
-    "illuminate/cache": "~7.1 || ^8.0",
-    "illuminate/config": "~7.1 || ^8.0",
-    "illuminate/container": "~7.1 || ^8.0",
+    "illuminate/cache": "^6.0 || ~7.1 || ^8.0",
+    "illuminate/config": "^6.0 || ~7.1 || ^8.0",
+    "illuminate/container": "^6.0 || ~7.1 || ^8.0",
     "phpunit/phpunit": "^9.0",
     "doctrine/coding-standard": "^6.0 || ^8.0",
     "phpstan/phpstan": "^0.12.4",
