@@ -1,5 +1,5 @@
 {
-  "name": "4CME/cognito",
+  "name": "4cme/cognito",
   "description": "AWS Cognito provider for Laravel 6 LTS Authentication",
   "type": "library",
   "license": "MIT",
