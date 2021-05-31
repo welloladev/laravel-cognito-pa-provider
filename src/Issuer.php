@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace CustomerGauge\Cognito;
+namespace Wellola\PACognito;
 
 final class Issuer
 {

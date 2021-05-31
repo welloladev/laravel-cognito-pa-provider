@@ -2,7 +2,7 @@
 
 namespace Tests\CustomerGauge\Cognito;
 
-use CustomerGauge\Cognito\Contracts\UserFactory;
+use Wellola\Cognito\Contracts\UserFactory;
 use CustomerGauge\Cognito\Issuer;
 use Illuminate\Cache\ArrayStore;
 use Illuminate\Cache\Repository;

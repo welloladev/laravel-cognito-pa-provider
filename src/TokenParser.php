@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace CustomerGauge\Cognito;
+namespace Wellola\PACognito;
 
 use Jose\Component\Checker\ClaimCheckerManager;
 use Jose\Component\Checker\ExpirationTimeChecker;

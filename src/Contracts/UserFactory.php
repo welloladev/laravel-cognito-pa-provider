@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace CustomerGauge\Cognito\Contracts;
+namespace Wellola\PACognito\Contracts;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 

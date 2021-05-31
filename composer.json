@@ -1,5 +1,5 @@
 {
-  "name": "4cme/cognito",
+  "name": "welloladev/laravel-cognito-pa-provider",
   "description": "AWS Cognito provider for Laravel 6 LTS Authentication",
   "type": "library",
   "license": "MIT",
@@ -31,7 +31,7 @@
   },
   "autoload": {
     "psr-4": {
-      "CustomerGauge\\Cognito\\": "src/"
+      "Wellola\\PACognito\\": "src/"
     }
   },
   "autoload-dev": {
@@ -42,7 +42,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "CustomerGauge\\Cognito\\LaravelCognitoServiceProvider"
+        "Wellola\\PACognito\\LaravelCognitoServiceProvider"
       ]
     }
   }

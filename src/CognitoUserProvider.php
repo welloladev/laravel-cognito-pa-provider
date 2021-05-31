@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace CustomerGauge\Cognito;
+namespace Wellola\PACognito;
 
-use CustomerGauge\Cognito\Contracts\UserFactory;
+use Wellola\Cognito\Contracts\UserFactory;
 use Exception;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\UserProvider;

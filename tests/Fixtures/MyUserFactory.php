@@ -2,7 +2,7 @@
 
 namespace Tests\CustomerGauge\Cognito\Fixtures;
 
-use CustomerGauge\Cognito\Contracts\UserFactory;
+use Wellola\Cognito\Contracts\UserFactory;
 use Illuminate\Contracts\Auth\Authenticatable;
 
 final class MyUserFactory implements UserFactory
