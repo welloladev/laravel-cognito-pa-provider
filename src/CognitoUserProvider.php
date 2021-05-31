@@ -2,7 +2,7 @@
 
 namespace Wellola\PACognito;
 
-use Wellola\Cognito\Contracts\UserFactory;
+use Wellola\PACognito\Contracts\UserFactory;
 use Exception;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\UserProvider;
