@@ -34,11 +34,6 @@
       "Wellola\\PACognito\\": "src/"
     }
   },
-  "autoload-dev": {
-    "psr-4": {
-      "Tests\\CustomerGauge\\Cognito\\": "tests/"
-    }
-  },
   "extra": {
     "laravel": {
       "providers": [
