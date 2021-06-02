@@ -2,18 +2,18 @@
 
 namespace Wellola\PACognito;
 
-use Wellola\PACognito\Contracts\UserFactory;
+use Wellola\PACognito\Contracts\PAUserFactory;
 use Exception;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\UserProvider;
 
-final class CognitoUserProvider implements UserProvider
+final class PACognitoUserProvider implements UserProvider
 {
     private $parser;
 
     private $factory;
 
-    public function __construct(TokenParser $parser, UserFactory $factory)
+    public function __construct(PATokenParser $parser, PAUserFactory $factory)
     {
         $this->parser = $parser;
         $this->factory = $factory;

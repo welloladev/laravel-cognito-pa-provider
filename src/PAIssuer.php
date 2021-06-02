@@ -2,7 +2,7 @@
 
 namespace Wellola\PACognito;
 
-final class Issuer
+final class PAIssuer
 {
     private $userPoolId;
 

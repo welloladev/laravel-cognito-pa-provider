@@ -4,7 +4,7 @@ namespace Wellola\PACognito\Contracts;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 
-interface UserFactory
+interface PAUserFactory
 {
     public function make(array $payload): ?Authenticatable;
 }

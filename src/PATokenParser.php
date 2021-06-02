@@ -14,11 +14,11 @@ use Jose\Component\Signature\JWSVerifier;
 use Jose\Component\Signature\Serializer\CompactSerializer;
 use Jose\Component\Signature\Serializer\JWSSerializerManager;
 
-final class TokenParser
+final class PATokenParser
 {
     private $keyResolver;
 
-    public function __construct(KeyResolver $keyResolver)
+    public function __construct(PAKeyResolver $keyResolver)
     {
         $this->keyResolver = $keyResolver;
     }

@@ -4,13 +4,13 @@ namespace Wellola\PACognito;
 
 use Illuminate\Contracts\Cache\Repository;
 
-final class KeyResolver
+final class PAKeyResolver
 {
     private $cache;
 
     private $issuer;
 
-    public function __construct(Issuer $issuer, Repository $cache)
+    public function __construct(PAIssuer $issuer, Repository $cache)
     {
         $this->issuer = $issuer;
         $this->cache = $cache;
@@ -25,7 +25,7 @@ final class KeyResolver
         });
     }
 
-    public function issuer(): Issuer
+    public function issuer(): PAIssuer
     {
         return $this->issuer;
     }

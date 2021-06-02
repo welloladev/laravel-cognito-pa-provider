@@ -6,7 +6,7 @@ use Illuminate\Container\Container;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
 
-final class LaravelCognitoServiceProvider extends ServiceProvider
+final class PALaravelCognitoServiceProvider extends ServiceProvider
 {
     public function register()
     {
@@ -17,21 +17,21 @@ final class LaravelCognitoServiceProvider extends ServiceProvider
 
     private function registerIssuer(): void
     {
-        $this->app->bind(Issuer::class, function () {
+        $this->app->bind(PAIssuer::class, function () {
             $config = $this->app->get('config');
 
             $pool = $config->get('auth.cognito-pa.pool');
 
             $region = $config->get('auth.cognito-pa.region');
 
-            return new Issuer($pool, $region);
+            return new PAIssuer($pool, $region);
         });
     }
 
     private function registerCognitoUserProvider(): void
     {
-        Auth::provider(CognitoUserProvider::class, function (Container $app) {
-            return $app->make(CognitoUserProvider::class);
+        Auth::provider(PACognitoUserProvider::class, function (Container $app) {
+            return $app->make(PACognitoUserProvider::class);
         });
     }
 }
