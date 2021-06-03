@@ -20,7 +20,7 @@ final class PAKeyResolver
     {
         $url = $this->issuer->toString() . '/.well-known/jwks.json';
 
-        return $this->cache->remember('jwks', 7200, function() use ($url) {
+        return $this->cache->remember(config('cognito.pa.user_pool_id'), 7200, function() use ($url) {
             return file_get_contents($url);
         });
     }

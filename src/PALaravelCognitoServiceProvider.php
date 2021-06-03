@@ -20,9 +20,9 @@ final class PALaravelCognitoServiceProvider extends ServiceProvider
         $this->app->bind(PAIssuer::class, function () {
             $config = $this->app->get('config');
 
-            $pool = $config->get('auth.cognito-pa.pool');
+            $pool = $config->get('cognito.pa.user_pool_id');
 
-            $region = $config->get('auth.cognito-pa.region');
+            $region = $config->get('cognito.pa.region');
 
             return new PAIssuer($pool, $region);
         });
